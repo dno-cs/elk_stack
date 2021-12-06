@@ -54,7 +54,7 @@ The configuration details of each machine may be found below.
 The machines on the internal network are not exposed to the public Internet. 
 
 The Jump Box and ELK Serer machines can accept connections from the Internet. Access to these machines is only allowed from the following IP addresses:
-- 192.168.0.1
+- 192.168.0.1 (Example only)
 
 Machines within the network can only be accessed by the personal home machine.
 - The personal home machine can access the ELK VM. IP Address: 192.168.0.1
