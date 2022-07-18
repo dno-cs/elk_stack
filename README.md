@@ -120,7 +120,7 @@ SSH into the control node and follow the steps below:
 
 - Download the install-elk.yml playbook with the following command from your ansible container:
   ``` bash
-  $ curl https://raw.githubusercontent.com/dno-cs/scripts/main/ansible/install-elk.yml > /etc/ansible/install-elk.yml
+  $ curl https://raw.githubusercontent.com/elk_stack/main/ansible/install-elk.yml > /etc/ansible/install-elk.yml
   ```
 
  - Edit the hosts file:
@@ -144,9 +144,9 @@ SSH into the control node and follow the steps below:
 
 - Download the filebeat-config.yml and metricbeat-config.yml playbooks to `/etc/ansible/files` with the following command from your ansible container:
   ``` bash
-  $ curl https://raw.githubusercontent.com/dno-cs/scripts/main/ansible/filebeat-config.yml > /etc/ansible/files/filebeat-config.yml
+  $ curl https://raw.githubusercontent.com/elk_stack/main/ansible/filebeat-config.yml > /etc/ansible/files/filebeat-config.yml
 
-  $ curl https://raw.githubusercontent.com/dno-cs/scripts/main/ansible/metricbeat-config.yml > /etc/ansible/files/metricbeat-config.yml
+  $ curl https://raw.githubusercontent.com/elk_stack/main/ansible/metricbeat-config.yml > /etc/ansible/files/metricbeat-config.yml
   ```
 - Edit the configuration files:
 
@@ -172,9 +172,9 @@ SSH into the control node and follow the steps below:
     ```
 - Download the filebeat-playbook.yml and metricbeat-playbook.yml playbooks to `/etc/ansible/` with the following command from your ansible container:
   ``` bash
-  $ curl https://raw.githubusercontent.com/dno-cs/scripts/main/ansible/filebeat-playbook.yml > /etc/ansible/filebeat-playbook.yml
+  $ curl https://raw.githubusercontent.com/elk_stack/main/ansible/filebeat-playbook.yml > /etc/ansible/filebeat-playbook.yml
 
-  $ curl https://raw.githubusercontent.com/dno-cs/scripts/main/ansible/metricbeat-playbook.yml > /etc/ansible/metricbeat-playbook.yml
+  $ curl https://raw.githubusercontent.com/elk_stack/main/ansible/metricbeat-playbook.yml > /etc/ansible/metricbeat-playbook.yml
   ```
  - Run the playbooks to install beat on the web servers:
     ``` bash
